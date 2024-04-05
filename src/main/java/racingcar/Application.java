@@ -22,40 +22,7 @@ public class Application {
         int attempts = Integer.parseInt(Console.readLine());
 
         Game game = new Game(names, attempts);
-
-//        List<Car> cars = new ArrayList<>();
-//        for (String name : names) {
-//            cars.add(new Car(name));
-//        }
-//
-//        System.out.println("\n실행 결과");
-//        for (int i = 0; i < attempts; i++) {
-//            for (Car car : cars) {
-//                if (Randoms.pickNumberInRange(0, 9) >= 4) {
-//                    car.advance();
-//                }
-//                car.displayProgress();
-//            }
-//            System.out.println();
-//        }
-//
-//        int maxDistance = 0;
-//        for (Car car : cars) {
-//            if (car.getDistance() > maxDistance) {
-//                maxDistance = car.getDistance();
-//            }
-//        }
-//
-//        List<String> winners = new ArrayList<>();
-//        for (Car car : cars) {
-//            if (car.getDistance() == maxDistance) {
-//                winners.add(car.getName());
-//            }
-//        }
-//
-//        System.out.println("최종 우승자 : " + String.join(", ", winners));
-//    }
-
+        game.start();
 
     }
 }
